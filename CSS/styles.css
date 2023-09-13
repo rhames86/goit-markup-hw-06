@@ -388,6 +388,8 @@ ul {
   line-height: normal;
   letter-spacing: 0.42px;
   text-transform: uppercase;
+  padding-bottom: 20px;
+  padding-top: 22px;
 }
 .icons-list-footer {
   display: flex;
@@ -728,7 +730,7 @@ ul {
 }
 .footer-container {
   width: auto;
-  background-color: #3a342f;
+  background-color: #2f303a;
   justify-content: center;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -736,7 +738,7 @@ ul {
 }
 .footer {
   width: 1200px;
-  background-color: #3a342f;
+  background-color: #2f303a;
   gap: 70px;
   display: flex;
 }
@@ -752,6 +754,7 @@ ul {
 }
 .container-contact {
   max-width: 237px;
+  padding-top: 12px;
   /* line-height: 10px; */
   /* background-color: #00a748; */
   /* flex-direction: column;
@@ -1057,7 +1060,196 @@ ul {
 .close-button:hover,
 .close-button:focus {
   color: var(--blue-text);
+  fill: var(--blue-text);
   cursor: pointer;
 }
-
+.text-align {
+  text-align: center;
+  padding-top: 40px;
+  font-size: 20px;
+  font-family: 'Roboto';
+  font-weight: 700;
+  line-height: 23px;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+.form {
+  /* background: #53c9ff; */
+  display: block;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 10px;
+  margin: 0px 40px 165.5px 40px;
+}
+.container-form {
+  width: 448px;
+  margin-bottom: 0;
+  align-content: center;
+  align-items: right;
+  justify-content: center;
+  justify-items: center;
+}
+.form-input-box {
+  border: 1px solid #21212133;
+  width: 448px;
+  height: 40px;
+  top: 0px;
+  left: 0px;
+  border-radius: 4px;
+  outline: none;
+  position: relative;
+}
+.input-terminos {
+  width: 100%;
+  color: #757575;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.71;
+  letter-spacing: 0.42px;
+  justify-content: center;
+  display: flex;
+  padding-left: 40px;
+  margin: 0;
+  /* background-color: green; */
+}
+.comment {
+  outline: none;
+  border: 1px solid #21212133;
+  width: 448px;
+  height: 120px;
+  /* top: 500px;
+  left: 576px; */
+  border-radius: 4px;
+}
+.p-l {
+  color: #757575;
+  font-family: 'Roboto';
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.01em;
+  text-align: left;
+}
+.btn-enviar {
+  width: 200px;
+  height: 50px;
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-align: center;
+  text-align: center;
+  color: #ffffff;
+  border: none;
+  background-color: #2196f3;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.btn-enviar-container {
+  width: 100%;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+}
+.icon-modal {
+  fill: #000000;
+  position: absolute;
+  top: 100px;
+}
+.icon-modal:focus-within,
+.icon-modal:focus,
+.icon-modal:hover {
+  fill: #2196f3;
+}
+.suscribase-footer {
+  color: #fff;
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  font-style: normal;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+  padding-top: 22px;
+  /* background-color: #00a748; */
+}
+.input-email-suscribase {
+  border: 1px solid #ffffff4d;
+  width: 357px;
+  height: 50px;
+  border-radius: 4px;
+  outline: none;
+  padding-left: 16px;
+  box-shadow: 0px 4px 4px 0px #00000026;
+  background-color: #2f303a;
+}
+.container-email {
+  gap: 12px;
+  display: inline-flex;
+}
+.suscribase-footer-btn {
+  width: 200px;
+  height: 50px;
+  color: white;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  background-color: #2196f3;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  padding: 10px 72px 10px 39px;
+  position: relative;
+}
+.suscribase-footer-btn:hover,
+.suscribase-footer-btn:focus {
+  color: white;
+  font-family: 'Roboto';
+  font-size: 16px;
+  text-align: center;
+  background-color: #2196f3;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: #000000 0px 4px 4px 0px;
+  padding: 10px 72px 10px 39px;
+}
+.suscribase-div {
+  width: 570px;
+  justify-content: flex;
+  align-content: flex;
+  border: none;
+  display: inline-block;
+}
+.svg-suscribir {
+  position: absolute;
+  right: 28px;
+}
+.nombre-relative {
+  position: relative;
+}
+.nombre-absolute {
+  position: absolute;
+}
+.tel-relative {
+  position: relative;
+}
+.tel-absolute {
+  position: absolute;
+}
+.sobre-relative {
+  position: relative;
+}
+.sobre-absolute {
+  position: absolute;
+  left: 12px;
+}
 /* Este es el fin del codigo */
