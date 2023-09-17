@@ -1102,6 +1102,7 @@ ul {
   border-radius: 4px;
   padding-left: 35px;
   outline: none;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 .icon-modal {
   fill: #000000;
@@ -1111,16 +1112,19 @@ ul {
   align-items: center;
   top: 50%;
   cursor: pointer;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 .form-input-box:focus-within + .icon-modal,
 .form-input-box:focus-visible + .icon-modal,
-.form-input-box:focus + .icon-modal {
+.form-input-box:focus + .icon-modal,
+.form-input-box:hover + .icon-modal {
   fill: var(--blue);
   /* border: 1px solid var(--blue); */
 }
 .form-input-box:focus-within,
 .form-input-box:focus-visible,
-.form-input-box:focus {
+.form-input-box:focus,
+.form-input-box:hover {
   border: 1px solid var(--blue);
 }
 .input-terminos {
@@ -1148,10 +1152,12 @@ ul {
   border-radius: 4px;
   padding: 16px;
   resize: none;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 .comment:focus,
 .comment:focus-within,
-.comment:focus-visible {
+.comment:focus-visible,
+.comment:hover {
   outline: none;
   border: 1px solid var(--blue);
   width: 448px;
