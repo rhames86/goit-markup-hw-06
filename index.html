@@ -27,7 +27,7 @@
           </li>
         </ul>
         <ul class="hero__navegation pv-main pv-navigavion m-0">
-          <li>
+          <li class="link-nav">
             <a href="./index.html" class="header-menu current link-nav borde-activo"> Estudio</a>
           </li>
           <li>
@@ -404,41 +404,38 @@
           </svg>
         </button>
         <h3 class="text-align m-0">Deje sus datos, nos contactaremos con usted</h3>
-
         <form class="container-form">
           <div class="form container-form">
-            <label for="nombre" class="p-l">Nombre </label>
-            <input autofocus type="text" id="nombre" name="nombre" class="form-input-box nombre-relative" required>
-            <a href="">
-              <svg width="12px" height="12px" class="icon-modal nombre-absolute">
-                <use href="./Images/icons/Modal-Icons.svg#icon-persona-negra"></use>
-              </svg>
-            </a>
-        
-            <label for="telefono" class="p-l">Telefono</label>
-            <a href="">
-              <input type="tel" id="telefono" name="telefono" class="form-input-box tel-relative" required>
-              <svg width="12px" height="12px" class="icon-modal tel-absolute">
-                <use href="./Images/icons/Modal-Icons.svg#icon-telefono-negro"></use>
-              </svg>
-            </a>
-
-            <label for="email" class="p-l">E-mail</label>
-            <input type="email" id="email" name="email" class="form-input-box sobre-relative" required>
-            <a href="">
-              <svg width="12px" height="12px" class="icon-modal sobre-absolute">
-                <use href="./Images/icons/Modal-Icons.svg#icon-sobre-negro"></use>
-              </svg>
-            </a>
-            
-            <label for="comment" class="p-l">Comentario</label>
+            <div class="input-field">
+              <label for="nombre" class="p-l">Nombre </label>
+              <input autofocus type="text" id="nombre" name="nombre" class="form-input-box" required>
+                <svg width="18px" height="18px" class="icon-modal">
+                  <use href="./Images/icons/Modal-Icons.svg#icon-persona-negra"></use>
+                </svg>
+            </div>
+            <div class="input-field">
+              <label for="phone" class="p-l">Teléfono </label>
+              <input type="phone" id="phone" name="phone" class="form-input-box" required>
+                <svg width="18px" height="18px" class="icon-modal">
+                  <use href="./Images/icons/Modal-Icons.svg#icon-telefono-negro"></use>
+                </svg>
+            </div>
+            <div class="input-field">
+              <label for="email" class="p-l">E-mail </label>
+              <input type="email" id="email" name="email" class="form-input-box" required>
+                <svg width="18px" height="18px" class="icon-modal">
+                  <use href="./Images/icons/Modal-Icons.svg#icon-sobre-negro"></use>
+                </svg>
+            </div>
+            <label for="comment" class="p-l">Comentarios </label>
             <textarea name="comentario" id="comment" rows="4" placeholder="Introduzca el texto" class="comment p-l"></textarea>
-
-            <h2 class="input-terminos">Estoy de acuerdo con el boletín informativo y acepto los Términos y Condiciones</h2>
-            
-            
           </div>
-          
+          <div class="terminos-container"> 
+            <input type="checkbox" class="terminos-check" id="terminos" required/>
+            <label for="terminos" class="terminos-text" >
+            Estoy de acuerdo con el boletín informativo y acepto los Términos y Condiciones
+            </label> 
+          </div>
         </form>
         <form class="btn-enviar-container"><button method="get" action="https://www.google.com" type="submit" name="q" class="btn-enviar">Enviar</button>
         </form>

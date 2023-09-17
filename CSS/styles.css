@@ -76,8 +76,9 @@ ul {
   border-radius: 2px;
   background-color: var(--blue-text);
   position: relative;
-  top: 100%;
+  top: 115%;
   cursor: auto;
+  bottom: -1px;
 }
 
 .p-0 {
@@ -96,6 +97,7 @@ ul {
   font-size: 26px;
   font-style: normal;
   font-weight: 700;
+  line-height: 31px;
   letter-spacing: 0.03em;
   cursor: pointer;
 }
@@ -1080,6 +1082,7 @@ ul {
   gap: 10px;
   padding-top: 10px;
   margin: 0px 40px 165.5px 40px;
+  /* background-color: #2196f3; */
 }
 .container-form {
   width: 448px;
@@ -1089,15 +1092,36 @@ ul {
   justify-content: center;
   justify-items: center;
 }
+.input-field {
+  position: relative;
+}
 .form-input-box {
   border: 1px solid #21212133;
   width: 448px;
   height: 40px;
-  top: 0px;
-  left: 0px;
   border-radius: 4px;
+  padding-left: 35px;
   outline: none;
-  position: relative;
+}
+.icon-modal {
+  fill: #000000;
+  position: absolute;
+  left: 12px;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  cursor: pointer;
+}
+.form-input-box:focus-within + .icon-modal,
+.form-input-box:focus-visible + .icon-modal,
+.form-input-box:focus + .icon-modal {
+  fill: var(--blue);
+  /* border: 1px solid var(--blue); */
+}
+.form-input-box:focus-within,
+.form-input-box:focus-visible,
+.form-input-box:focus {
+  border: 1px solid var(--blue);
 }
 .input-terminos {
   width: 100%;
@@ -1122,6 +1146,21 @@ ul {
   /* top: 500px;
   left: 576px; */
   border-radius: 4px;
+  padding: 16px;
+  resize: none;
+}
+.comment:focus,
+.comment:focus-within,
+.comment:focus-visible {
+  outline: none;
+  border: 1px solid var(--blue);
+  width: 448px;
+  height: 120px;
+  /* top: 500px;
+  left: 576px; */
+  border-radius: 4px;
+  padding: 16px;
+  resize: none;
 }
 .p-l {
   color: #757575;
@@ -1132,6 +1171,32 @@ ul {
   letter-spacing: 0.01em;
   text-align: left;
 }
+/* codigo para el checkbox */
+.terminos-container {
+  width: 448px;
+  display: flex;
+  position: relative;
+  padding-left: 40px;
+}
+.terminos-check {
+  display: block;
+  width: 15px;
+  height: 16px;
+  position: absolute;
+  top: 8%;
+  left: 48px;
+}
+.terminos-text {
+  display: flex;
+  align-items: center;
+  color: var(--paragraph-color);
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  padding-left: 30px;
+  padding-bottom: 10px;
+}
+/* fin codigo checkbox */
 .btn-enviar {
   width: 200px;
   height: 50px;
@@ -1145,6 +1210,7 @@ ul {
   border: none;
   background-color: #2196f3;
   border-radius: 4px;
+  box-shadow: 0px 4px 4px 0px #00000026;
   cursor: pointer;
 }
 .btn-enviar-container {
@@ -1154,16 +1220,6 @@ ul {
   align-items: center;
   justify-content: center;
   justify-items: center;
-}
-.icon-modal {
-  fill: #000000;
-  position: absolute;
-  top: 100px;
-}
-.icon-modal:focus-within,
-.icon-modal:focus,
-.icon-modal:hover {
-  fill: #2196f3;
 }
 .suscribase-footer {
   color: #fff;
@@ -1185,9 +1241,14 @@ ul {
   height: 50px;
   border-radius: 4px;
   outline: none;
+  color: #ffffff99;
   padding-left: 16px;
   box-shadow: 0px 4px 4px 0px #00000026;
   background-color: #2f303a;
+}
+.input-email-suscribase:focus-within {
+  background-color: #2f303a;
+  color: #ffffff99;
 }
 .container-email {
   gap: 12px;
